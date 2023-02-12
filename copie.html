@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script source="script2.js">
+
+</script>
+
+<title>test website</title>
+
+<center>
+    <h1 style=color:red>
+        test website
+    </h1>
+</center>
+
+<script source="script.js">
+    function getip() {
+        fetch('https://api.ipify.org/?format=json')
+            .then(results => results.json())
+            .then(data => window.alert(data.ip));
+    }
+</script>
+
+<button onclick="getip()">Press me</button>
