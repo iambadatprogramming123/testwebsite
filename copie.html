@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<script source="script2.js">
 
-</script>
-
-<title>ip grabber</title>
+<title>site de gusteri</title>
 
 <center>
     <h1 style=color:red>
-        ip grabber
+        site de gusteri
     </h1>
 </center>
 
@@ -15,8 +12,8 @@
     function getip() {
         fetch('https://api.ipify.org/?format=json')
             .then(results => results.json())
-            .then(data => window.alert(data.ip));
+            .then(data => window.alert("iti stiu ip-ul maghiarule: "+data.ip));
     }
 </script>
 
-<button onclick="getip()">Press me</button>
+<button onclick="getip()">apasa daca esti guster</button>
